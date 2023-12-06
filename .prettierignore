@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+.yarn
+.vscode
+.idea
+public
+
+**/.git
+**/node_modules

@@ -1,0 +1,21 @@
+
+$primary-color: var(--app-text-color);
+$backGround-color: var(--app-backColor);
+
+:root {
+  // 颜色规范
+  --app-text-color: #1c0303;
+  --app-backColor: #eee7e7;
+}
+
+:root[class='dark'] {
+  // 颜色规范
+  --app-text-color: #eee7e7;
+  --app-backColor: #1c0303;
+}
+
+:root[class='green'] {
+  // 颜色规范
+  --app-text-color: #6cdc10;
+  --app-backColor: #8f2323;
+}

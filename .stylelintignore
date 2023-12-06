@@ -1,0 +1,11 @@
+/dist/*
+/build/*
+/public/*
+public/*
+node_modules/
+BpmnOrg/
+tstest/
+
+# 表单相关
+form-builder/
+src/components/builder
