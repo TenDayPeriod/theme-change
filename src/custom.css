@@ -2,9 +2,96 @@
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
-html {
+html{
+  --custom-primary-color: #2e7cbb;
+  --custom-primary-color-hover: #5ac1c5;
+  --custom-primary-color-active: #096dd9;
+  --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
+  --custom-primary-1: #e6f7ff;
+  --custom-primary-2: #bae7ff;
+  --custom-primary-3: #91d5ff;
+  --custom-primary-4: #69c0ff;
+  --custom-primary-5: #40a9ff;
+  --custom-primary-6: #1890ff;
+  --custom-primary-7: #096dd9;
+  --custom-primary-color-deprecated-pure: ;
+  --custom-primary-color-deprecated-l-35: #cbe6ff;
+  --custom-primary-color-deprecated-l-20: #7ec1ff;
+  --custom-primary-color-deprecated-t-20: #46a6ff;
+  --custom-primary-color-deprecated-t-50: #8cc8ff;
+  --custom-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+  --custom-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+  --custom-primary-color-active-deprecated-d-02: #dcf4ff;
+  --custom-success-color: #52c41a;
+  --custom-success-color-hover: #73d13d;
+  --custom-success-color-active: #389e0d;
+  --custom-success-color-outline: rgba(82, 196, 26, 0.2);
+  --custom-success-color-deprecated-bg: #f6ffed;
+  --custom-success-color-deprecated-border: #b7eb8f;
+  --custom-error-color: #ff4d4f;
+  --custom-error-color-hover: #ff7875;
+  --custom-error-color-active: #d9363e;
+  --custom-error-color-outline: rgba(255, 77, 79, 0.2);
+  --custom-error-color-deprecated-bg: #fff2f0;
+  --custom-error-color-deprecated-border: #ffccc7;
+  --custom-warning-color: #faad14;
+  --custom-warning-color-hover: #ffc53d;
+  --custom-warning-color-active: #d48806;
+  --custom-warning-color-outline: rgba(250, 173, 20, 0.2);
+  --custom-warning-color-deprecated-bg: #fffbe6;
+  --custom-warning-color-deprecated-border: #ffe58f;
+  --custom-info-color: #1890ff;
+  --custom-info-color-deprecated-bg: #e6f7ff;
+  --custom-info-color-deprecated-border: #91d5ff;
+}
+
+/*黑色模式*/
+html[class='dark'] {
   --custom-primary-color: #bb752e;
   --custom-primary-color-hover: #1e6b24;
+  --custom-primary-color-active: #096dd9;
+  --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
+  --custom-primary-1: #e6f7ff;
+  --custom-primary-2: #bae7ff;
+  --custom-primary-3: #91d5ff;
+  --custom-primary-4: #69c0ff;
+  --custom-primary-5: #40a9ff;
+  --custom-primary-6: #1890ff;
+  --custom-primary-7: #096dd9;
+  --custom-primary-color-deprecated-pure: ;
+  --custom-primary-color-deprecated-l-35: #cbe6ff;
+  --custom-primary-color-deprecated-l-20: #7ec1ff;
+  --custom-primary-color-deprecated-t-20: #46a6ff;
+  --custom-primary-color-deprecated-t-50: #8cc8ff;
+  --custom-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+  --custom-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+  --custom-primary-color-active-deprecated-d-02: #dcf4ff;
+  --custom-success-color: #52c41a;
+  --custom-success-color-hover: #73d13d;
+  --custom-success-color-active: #389e0d;
+  --custom-success-color-outline: rgba(82, 196, 26, 0.2);
+  --custom-success-color-deprecated-bg: #f6ffed;
+  --custom-success-color-deprecated-border: #b7eb8f;
+  --custom-error-color: #ff4d4f;
+  --custom-error-color-hover: #ff7875;
+  --custom-error-color-active: #d9363e;
+  --custom-error-color-outline: rgba(255, 77, 79, 0.2);
+  --custom-error-color-deprecated-bg: #fff2f0;
+  --custom-error-color-deprecated-border: #ffccc7;
+  --custom-warning-color: #faad14;
+  --custom-warning-color-hover: #ffc53d;
+  --custom-warning-color-active: #d48806;
+  --custom-warning-color-outline: rgba(250, 173, 20, 0.2);
+  --custom-warning-color-deprecated-bg: #fffbe6;
+  --custom-warning-color-deprecated-border: #ffe58f;
+  --custom-info-color: #1890ff;
+  --custom-info-color-deprecated-bg: #e6f7ff;
+  --custom-info-color-deprecated-border: #91d5ff;
+}
+/*绿色样式*/
+html[class='green'] {
+  --custom-primary-color: #28b254;
+  --custom-primary-color-hover: #214460;
   --custom-primary-color-active: #096dd9;
   --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
   --custom-primary-1: #e6f7ff;
