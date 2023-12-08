@@ -1,21 +1,38 @@
-
+$paneBdrs: 6px;
+$gray-4: var(--table-text);
+// layout参数
+$headerHeight: 50px;
+$headerPd: 28px;
+$layoutSpace: 16px;
 $primary-color: var(--app-text-color);
+$primary_color_3: var(--app-text-3-color);
 $backGround-color: var(--app-backColor);
+$sideBg: var(--sideBg);
+$sideColor: var(--sideColor);
 
 :root {
   // 颜色规范
-  --app-text-color: #1c0303;
+  --app-text-color: #846735;
+  --app-text-3-color: #9a8b8b;
   --app-backColor: #eee7e7;
+  --sideBg: #efece1;
+  --sideColor: #4e5969;
 }
 
 :root[class='dark'] {
   // 颜色规范
   --app-text-color: #eee7e7;
-  --app-backColor: #1c0303;
+  --app-text-3-color: #443c3c;
+  --app-backColor: #3f3434;
+  --sideBg: #565347;
+  --sideColor: #4e5969;
 }
 
 :root[class='green'] {
   // 颜色规范
   --app-text-color: #6cdc10;
+  --app-text-3-color: #677249;
   --app-backColor: #8f2323;
+  --sideBg: #bea33e;
+  --sideColor: #48482f;
 }

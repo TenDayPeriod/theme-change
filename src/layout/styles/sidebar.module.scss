@@ -1,0 +1,94 @@
+/*
+ * @Description: sidebar样式
+ * @Author: Rfan
+ * @Date: 2022-07-16 11:21:51
+ * @LastEditTime: 2023-06-27 17:27:37
+ */
+
+$sideColor-hover: $gray-4;
+
+.layout-slider {
+  z-index: 11;
+  background-color: $sideBg;
+  @apply shadow-lg;
+
+  .logo {
+    :global .ant-typography {
+      color: $sideColor;
+    }
+  }
+
+  .collapse-icon {
+    font-size: 16px;
+    color: $sideColor;
+  }
+
+  :global {
+    .ant-menu {
+      color: $sideColor;
+      background-color: $sideBg;
+      border-right: none;
+
+      .ant-menu-item-selected {
+        background-color: $primary-color;
+        border-radius: $paneBdrs;
+      }
+    }
+
+    .ant-menu-submenu-arrow {
+      color: $sideColor;
+    }
+
+    .ant-menu-submenu {
+      &:hover {
+        .ant-menu-submenu-title {
+          .ant-menu-submenu-arrow {
+            color: $sideColor-hover;
+          }
+        }
+      }
+
+      &.ant-menu-submenu-active {
+        color: $sideColor-hover;
+      }
+
+      .ant-menu-submenu-title {
+        @apply font-bold;
+
+        &:hover {
+          color: $sideColor-hover;
+        }
+      }
+
+      .ant-menu-item {
+        @apply font-normal
+      }
+    }
+
+    .ant-menu-submenu-selected {
+      color: $sideColor-hover;
+    }
+
+    .ant-menu-item {
+      border-radius: $paneBdrs;
+      @apply font-bold;
+
+      &:hover {
+        &.ant-menu-item-active {
+          color: $sideColor-hover;
+        }
+      }
+    }
+
+    .ant-layout-sider-children {
+      padding: 16px 12px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.unit-selector {
+  font-size: 16px;
+  color: $gray-4;
+}

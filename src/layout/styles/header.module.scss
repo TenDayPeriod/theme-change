@@ -1,0 +1,205 @@
+/*
+ * @Description: header样式
+ * @Author: Rfan
+ * @Date: 2022-07-16 11:21:51
+ * @LastEditTime: 2023-06-29 14:55:57
+ */
+
+@import '../../assets/styles/mixin';
+
+$subSysColor: #ffffff;
+
+.layout-header {
+  $bevelBg: rgba(255, 255, 255, 20%);
+  $layerGap: 30px;
+  color: var(--table-text);
+  min-width: 1200px;
+  height: $headerHeight;
+  padding: 0 $headerPd;
+  line-height: $headerHeight;
+  background-color: $primary_color;
+  @include beveled-corners($bevelBg, 0, $layerGap);
+
+  .layout-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .header-left-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: -$headerPd;
+
+    .left-bevel {
+      $bevelBg: rgba(255, 255, 255, 20%);
+      $layerGap: 30px;
+
+      position: relative;
+      padding: 0 $layerGap 0 $headerPd;
+
+      .unit {
+        position: relative;
+        z-index: 1;
+        padding-right: 50px;
+        padding-left: $headerPd;
+        margin-left: -$headerPd;
+
+        > span {
+          @apply drop-shadow-md text-gray-200;
+        }
+      }
+    }
+
+    .header-title {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    :global {
+      .unit-name {
+        font-size: 20px;
+        @apply font-bold;
+      }
+
+      .ant-select {
+        color: #ffffff;
+      }
+
+      .ant-select-arrow {
+        color: rgba(255, 255, 255, 30%);
+      }
+    }
+  }
+
+  .header-center-container {
+    padding: 0 30px;
+    background: url('../../assets/images/sysName.png') left top /8% 75%  no-repeat,
+    url('../../assets/images/rb.png') right bottom /8% 75%  no-repeat ;
+  }
+
+  .header-right-container {
+    $radius: 80px;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: $headerHeight;
+
+    :global .ant-btn-circle {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .user-dropdown {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+
+      .user-dropdown__name {
+        margin-left: 8px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/**
+ * @description: logo样式
+ */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  .logo-img {
+    display: flex;
+
+    :global img {
+      object-fit: contain;
+    }
+  }
+
+  .pic {
+    margin-right: 8px;
+    border-radius: 4px;
+  }
+
+  .title {
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
+/**
+ * @description: 中间主导航
+ */
+.main-menu {
+  display: flex;
+  margin-left: -12px;
+  .main-menu-select{
+   min-Width: 80px;
+   color: var(--table-text);
+
+}
+  .main-menu-wrapper {
+    background-color: transparent;
+  }
+
+  :global {
+    .ant-select {
+      min-width: 130px;
+      font-size: 16px;
+      color: $subSysColor;
+    }
+
+    .ant-select-selection-item {
+      @apply font-bold;
+    }
+
+    .ant-select-arrow {
+      color: $subSysColor;
+    }
+
+    .ant-menu.main-menu {
+      height: 50px;
+      background-color: transparent;
+
+      .ant-menu-item {
+        display: flex;
+        align-items: center;
+        font-size: larger;
+      }
+
+      .ant-menu-title-content {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// 导航下拉中的列表
+.drawer-nav-item {
+  display: flex;
+  margin-bottom: 15px;
+
+  .main-nav {
+    flex: 0 0 100px;
+    width: 100px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .click-title {
+    cursor: pointer;
+  }
+
+  .nav-items {
+    :global .ant-space {
+      flex-wrap: wrap;
+    }
+  }
+}

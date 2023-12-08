@@ -4,16 +4,18 @@
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 html{
   --custom-primary-color: #2e7cbb;
+  --table-head: #3b9bea;
+  --table-text: #2d373d;
   --custom-primary-color-hover: #5ac1c5;
   --custom-primary-color-active: #096dd9;
   --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
-  --custom-primary-1: #e6f7ff;
-  --custom-primary-2: #bae7ff;
+  --custom-primary-1: #434a4d;
+  --custom-primary-2: #856835;
   --custom-primary-3: #91d5ff;
   --custom-primary-4: #69c0ff;
   --custom-primary-5: #40a9ff;
   --custom-primary-6: #1890ff;
-  --custom-primary-7: #096dd9;
+  --custom-primary-7: #ffffff;
   --custom-primary-color-deprecated-pure: ;
   --custom-primary-color-deprecated-l-35: #cbe6ff;
   --custom-primary-color-deprecated-l-20: #7ec1ff;
@@ -21,7 +23,7 @@ html{
   --custom-primary-color-deprecated-t-50: #8cc8ff;
   --custom-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
   --custom-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
-  --custom-primary-color-active-deprecated-d-02: #dcf4ff;
+  --custom-primary-color-active-deprecated-d-02: #65747a;
   --custom-success-color: #52c41a;
   --custom-success-color-hover: #73d13d;
   --custom-success-color-active: #389e0d;
@@ -47,17 +49,19 @@ html{
 
 /*黑色模式*/
 html[class='dark'] {
-  --custom-primary-color: #bb752e;
-  --custom-primary-color-hover: #1e6b24;
+  --custom-primary-color: #e5cccc;
+  --table-head: #475159;
+  --table-text: #afd6ef;
+  --custom-primary-color-hover: #3b483b;
   --custom-primary-color-active: #096dd9;
   --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
-  --custom-primary-1: #e6f7ff;
-  --custom-primary-2: #bae7ff;
+  --custom-primary-1: #4a5647;
+  --custom-primary-2: #44565e;
   --custom-primary-3: #91d5ff;
   --custom-primary-4: #69c0ff;
   --custom-primary-5: #40a9ff;
   --custom-primary-6: #1890ff;
-  --custom-primary-7: #096dd9;
+  --custom-primary-7: #ffffff;
   --custom-primary-color-deprecated-pure: ;
   --custom-primary-color-deprecated-l-35: #cbe6ff;
   --custom-primary-color-deprecated-l-20: #7ec1ff;
@@ -65,7 +69,7 @@ html[class='dark'] {
   --custom-primary-color-deprecated-t-50: #8cc8ff;
   --custom-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
   --custom-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
-  --custom-primary-color-active-deprecated-d-02: #dcf4ff;
+  --custom-primary-color-active-deprecated-d-02: #9dbccb;
   --custom-success-color: #52c41a;
   --custom-success-color-hover: #73d13d;
   --custom-success-color-active: #389e0d;
@@ -91,16 +95,18 @@ html[class='dark'] {
 /*绿色样式*/
 html[class='green'] {
   --custom-primary-color: #28b254;
+  --table-head: #a0d39c;
+  --table-text: #ddafef;
   --custom-primary-color-hover: #214460;
   --custom-primary-color-active: #096dd9;
   --custom-primary-color-outline: rgba(24, 144, 255, 0.2);
-  --custom-primary-1: #e6f7ff;
-  --custom-primary-2: #bae7ff;
+  --custom-primary-1: #e6bfec;
+  --custom-primary-2: #94b98a;
   --custom-primary-3: #91d5ff;
   --custom-primary-4: #69c0ff;
   --custom-primary-5: #40a9ff;
   --custom-primary-6: #1890ff;
-  --custom-primary-7: #096dd9;
+  --custom-primary-7: #b389ce;
   --custom-primary-color-deprecated-pure: ;
   --custom-primary-color-deprecated-l-35: #cbe6ff;
   --custom-primary-color-deprecated-l-20: #7ec1ff;
@@ -262,7 +268,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: var(--custom-primary-color);
+  color: var(--app-text-color);
   text-decoration: none;
   background-color: transparent;
   outline: none;
@@ -15519,7 +15525,7 @@ textarea.custom-input-number {
   padding: 0 50px;
   color: rgba(0, 0, 0, 0.85);
   line-height: 64px;
-  background: #001529;
+  background: var(--custom-primary-2);
 }
 .custom-layout-footer {
   padding: 24px 50px;
@@ -22079,10 +22085,10 @@ span.custom-radio + * {
 }
 .custom-table-thead > tr > th {
   position: relative;
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--table-text);
   font-weight: 500;
   text-align: left;
-  background: #fafafa;
+  background: var(--table-head);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   transition: background 0.3s ease;
 }
@@ -25305,7 +25311,7 @@ tr.custom-table-expanded-row .custom-descriptions-view table {
   transform: scaleY(-1);
 }
 .custom-typography {
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--custom-primary-7);
   overflow-wrap: break-word;
 }
 .custom-typography.custom-typography-secondary {

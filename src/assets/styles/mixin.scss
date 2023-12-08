@@ -1,0 +1,29 @@
+@mixin clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin ellipsis($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $line > 1 {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  } @else {
+    white-space: nowrap;
+  }
+}
+
+@mixin beveled-corners($bg, $tl: 0, $tr: $tl, $br: $tr, $bl: $tl) {
+  background-size: 30% 100%;
+  background-image: url("../images/topLeft.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+// @mixin right-bevel(){}

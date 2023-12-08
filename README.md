@@ -19,3 +19,19 @@
 
 1. [antd之外样式改变](https://juejin.cn/post/7134594122391748615?searchId=202312021743052B0545AE67835A1B4675)（原理与方案三类型）
 2. [antd样式改变](https://www.jianshu.com/p/13421246b97d)（lessc --js --modify-var="ant-prefix=custom" node_modules/antd/dist/antd.variable.less custom.css   、其中ant-prefix=custom中的custom为需要切换样式的名字）
+
+
+
+## 3、分支介绍
+
+#### 1、test
+
+优点：antd样式独立、尽可能避免了冲突
+
+缺点：独立css样式文件、相对重
+
+#### 2、test-two
+
+优点：根据类名切换、更加方便、避免重复代码
+
+缺点：样式不够独立、依赖基础色

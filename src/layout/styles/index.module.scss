@@ -1,0 +1,47 @@
+/*
+ * @Description: layout主样式
+ * @Author: Rfan
+ * @Date: 2023-03-14 18:01:02
+ * @LastEditTime: 2023-06-28 10:33:43
+ */
+
+:global .app-wrapper {
+  background-color: #f0f2f5;
+
+  .layout-slider {
+    .ant-layout-sider-children {
+      overflow: auto;
+    }
+  }
+}
+
+.app-main > .ant-layout {
+  height: 100%;
+}
+
+// 副header样式
+.sub-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 20%);
+
+  .sub-header__left,
+  .sub-header__right {
+    flex: 0 0 auto;
+    width: 220px;
+    text-align: center;
+  }
+
+  .sub-header__middle {
+    flex-grow: 1;
+    align-self: flex-end;
+    justify-content: center;
+    width: calc(100% - 440px);
+    min-height: 40px;
+    border: none;
+  }
+}

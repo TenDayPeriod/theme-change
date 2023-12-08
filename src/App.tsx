@@ -26,6 +26,7 @@ function App() {
         {/* </h1> */}
 
         <FirstPage />
+        <hr />
         <SecondPage />
       </div>
     </ConfigProvider>

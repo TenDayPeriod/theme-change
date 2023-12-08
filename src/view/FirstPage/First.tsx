@@ -36,7 +36,7 @@ const FirstPage = () => {
         ]}
         onChange={changeTheme}
       />
-      <div className={cx('pageText')}>HI</div>
+      {/* <div className={cx('pageText')}>HI</div> */}
     </>
   );
 };

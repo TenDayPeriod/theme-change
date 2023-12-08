@@ -1,0 +1,65 @@
+/*
+ * @Description: 快捷导航样式文件
+ * @Author: Rfan
+ * @Date: 2022-01-14 17:08:52
+ * @LastEditTime: 2023-06-28 10:32:48
+ */
+
+.tags-view-container {
+  padding: 8px 4px 0;
+
+  :global .ant-tabs-top {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+
+      .ant-tabs-tab {
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+        &.ant-tabs-tab-active {
+          color: #ffffff;
+          background-color: $primary-color;
+
+          .ant-tabs-tab-btn {
+            color: #ffffff;
+          }
+
+          .ant-tabs-tab-remove {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .card-tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    margin: 0 4px 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 85%);
+    cursor: pointer;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &.tag-active {
+      color: #1890ff;
+    }
+
+    .close-btn {
+      width: auto;
+      height: auto;
+      margin-left: 8px;
+
+      :global .anticon {
+        font-size: 12px;
+      }
+    }
+  }
+}
